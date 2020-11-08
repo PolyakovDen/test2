@@ -4,6 +4,10 @@
       <div class="text-center">
         <logo />
         <vuetify-logo />
+        <v-img
+          src="/logo.png"
+          max-height="40"
+          max-width="80"></v-img>
       </div>
       <v-card>
         <v-card-title class="headline">
