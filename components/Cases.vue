@@ -1,0 +1,213 @@
+<template>
+  <div class="">
+    <div class="cases__block">
+      <div class="cases__block--wrapper">
+        <h2 class="cases__title">
+          Успешные кейсы
+        </h2>
+      </div>
+    </div>
+<!--    <div class="cases__wrapper">-->
+<!--      <VueSlickCarousel v-bind="slickOptions">-->
+<!--        <div class="cases__item&#45;&#45;list">-->
+<!--          <div class="cases__item&#45;&#45;item"><h3>1</h3></div>-->
+<!--        </div>-->
+<!--        <div class="cases__item&#45;&#45;list">-->
+<!--          <div class="cases__item&#45;&#45;item"><h3>1</h3></div>-->
+<!--        </div>-->
+<!--        <div class="cases__item&#45;&#45;list">-->
+<!--          <div class="cases__item&#45;&#45;item"><h3>1</h3></div>-->
+<!--        </div>-->
+<!--        <div class="cases__item&#45;&#45;list">-->
+<!--          <div class="cases__item&#45;&#45;item"><h3>1</h3></div>-->
+<!--        </div>-->
+<!--      </VueSlickCarousel>-->
+<!--    </div>-->
+    <div class="cases__wrapper">
+      <VueSlickCarousel v-bind="slickOptions">
+        <div v-for="(item, i) in items" :key="i" class="cases__item--list">
+          <div class="cases__item--item">
+            <div class="cases__item--header">
+              <span class="cases__item--header-text">Заказчик:</span>
+              <h2 class="cases__item--header-title">{{ item.title }}</h2>
+            </div>
+            <div class="cases__item--task cases__item-same">
+              <span>Задача:</span>
+              <h3>{{ item.task }}</h3>
+            </div>
+            <div class="cases__item--tool cases__item-same">
+              <span>Инструмент:</span>
+              <h3>{{ item.tool }}</h3>
+            </div>
+            <div class="cases__item--platform cases__item-same">
+              <span>Платформа:</span>
+              <h3>{{ item.platform }}</h3>
+            </div>
+            <div class="cases__item--budget cases__item-same">
+              <span>Рекламный бюджет:</span>
+              <p>{{ item.budget }}</p>
+            </div>
+            <div class="cases__item--result cases__item-same">
+              <span>Результат:</span>
+              <p>{{ item.result }}</p>
+            </div>
+          </div>
+        </div>
+      </VueSlickCarousel>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: "Cases",
+    data () {
+      return {
+        slickOptions: {
+          slidesToShow: 3,
+          focusOnSelect: true,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          speed: 3000,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+          ]
+        },
+        items: [
+          {
+            title: 'IT школа для детей',
+            task: 'привлечение новых учеников для формирование групы по новому направлению.',
+            tool: 'таргетированая реклама',
+            platform: 'Facebook & Instagram',
+            budget: '130 долларов США',
+            result: '34 заявки за 2 недели, на общую сумму 8933 доларов США.'
+          },
+          {
+            title: 'Компания VETER',
+            task: 'привлечение новых, потенциальных клиентов, путем генерации лидов на сайте.',
+            tool: 'таргетированая реклама',
+            platform: 'Facebook & Instagram',
+            budget: '150 долларов США',
+            result: '53 заявки за месяц, из которых была сделана продажа на 12500 доларов США, остальные заявки в работе.'
+          },
+          {
+            title: 'Магазин мебели SHADEKO',
+            task: 'увеличение продаж, путем привлечения заинтересованых клиентов через Instagram direct.',
+            tool: 'таргетированая реклама',
+            platform: 'Instagram',
+            budget: '500 долларов США',
+            result: 'За весь период рекламной кампании получено 548 заявок.'
+          },
+          {
+            title: 'IT школа для детей',
+            task: 'привлечение новых учеников для формирование групы по новому направлению.',
+            tool: 'таргетированая реклама',
+            platform: 'Facebook & Instagram',
+            budget: '130 долларов США',
+            result: '34 заявки за 2 недели, на общую сумму 8933 доларов США.'
+          },
+          {
+            title: 'IT школа для детей',
+            task: 'привлечение новых учеников для формирование групы по новому направлению.',
+            tool: 'таргетированая реклама',
+            platform: 'Facebook & Instagram',
+            budget: '130 долларов США',
+            result: '34 заявки за 2 недели, на общую сумму 8933 доларов США.'
+          },
+          {
+            title: 'Компания VETER',
+            task: 'привлечение новых, потенциальных клиентов, путем генерации лидов на сайте.',
+            tool: 'таргетированая реклама',
+            platform: 'Facebook & Instagram',
+            budget: '150 долларов США',
+            result: '53 заявки за месяц, из которых была сделана продажа на 12500 доларов США, остальные заявки в работе.'
+          },
+        ]
+      }
+    }
+  }
+</script>
+
+<style scoped>
+  .cases__block {
+    background-image: url("/cases-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .cases__block--wrapper {
+    display: flex;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+  }
+  .cases__title {
+    text-align: center;
+    margin: auto;
+    font-size: 62px;
+    text-transform: uppercase;
+  }
+  .cases__wrapper {
+    /*margin-top: -220px;*/
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .cases__item--list {
+    background-color: #2f6464;
+    display: flex;
+    margin: 0 -10px;
+    padding: 25px 10px 10px 45px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  .cases__item--item {
+    margin: 0 10px;
+  }
+  .cases__item--header {
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 190px;
+  }
+  .cases__item--header-text {
+    font-size: 28px;
+    color: #f8f8f1;
+  }
+  .cases__item--header-title {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 25px;
+  }
+  .cases__item-same span {
+    display: block;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  .cases__item-same h3,
+  .cases__item-same p {
+    font-size: 13px;
+    font-weight: normal;
+  }
+  ::v-deep .slick-slider {
+    overflow: hidden;
+  }
+  ::v-deep .slick-track {
+    display: flex;
+    justify-content: space-between;
+  }
+  ::v-deep .slick-slide {
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+</style>
