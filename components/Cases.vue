@@ -235,4 +235,12 @@
     background: url('/sl-arrow_r.svg') 0 0 / 100% no-repeat;
   }
 
+  @media (max-width:600px){
+    .cases__item--list {
+      margin: 0;
+    }
+    .cases__item--item {
+      margin: 0;
+    }
+  }
 </style>
