@@ -8,6 +8,7 @@
         <div class="flip-card mb-5">
           <div class="flip-card-inner">
             <div class="flip-card-front">
+              <img class="flip-card-front--img" :src="item.src" alt="">
             </div>
             <div class="flip-card-back">
               <h1>{{ item.text }}</h1>
@@ -26,16 +27,20 @@
       return {
         items: [
           {
-            text: 'Hello from Den'
+            text: 'Hello from Den',
+            src: 'money1.png'
           },
           {
-            text: 'Hello from Stas'
+            text: 'Hello from Stas',
+            src: 'money2.png'
           },
           {
-            text: 'lorem lorem lorem lorem'
+            text: 'lorem lorem lorem lorem',
+            src: 'money1.png'
           },
           {
-            text: 'Hello from ipsum ipsum'
+            text: 'Hello from ipsum ipsum',
+            src: 'money2.png'
           }
         ]
       }
@@ -108,7 +113,10 @@
   }
 
   .flip-card-front {
-    background-color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     color: black;
   }
 
