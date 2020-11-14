@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-12">
     <Dialog
       :dialog='dialog'
       :item='item'

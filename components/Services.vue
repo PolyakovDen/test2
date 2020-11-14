@@ -10,7 +10,7 @@
             v-for="(item, index) in items"
             :key="index"
             :item="item"
-            class="services__item mr-16"
+            class="services__item"
           />
         </div>
       </v-container>
@@ -260,4 +260,19 @@
     margin-bottom: 0;
   }
 
+  .services__item {
+    margin-right: 65px;
+  }
+
+  @media (max-width:600px) {
+    .services__item {
+      margin-right: 35px;
+    }
+  }
+
+  @media (max-width:450px) {
+    .services__item {
+      margin-right: 20px;
+    }
+  }
 </style>

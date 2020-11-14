@@ -73,7 +73,7 @@
           arrows: false,
           responsive: [
             {
-              breakpoint: 900,
+              breakpoint: 960,
               settings: {
                 slidesToShow: 2,
                 arrows: true,
@@ -235,7 +235,7 @@
     background: url('/sl-arrow_r.svg') 0 0 / 100% no-repeat;
   }
 
-  @media (max-width:600px){
+  @media (max-width:600px) {
     .cases__item--list {
       margin: 0;
     }
