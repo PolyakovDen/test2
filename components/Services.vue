@@ -247,6 +247,13 @@
     letter-spacing: 15px;
   }
 
+  @media screen and (max-width: 600px) {
+    .services__header--item {
+      font-size: 45px;
+      letter-spacing: 5px;
+    }
+  }
+
   .container {
     max-width: 1000px !important;
   }

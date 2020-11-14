@@ -7,22 +7,6 @@
         </h2>
       </div>
     </div>
-<!--    <div class="cases__wrapper">-->
-<!--      <VueSlickCarousel v-bind="slickOptions">-->
-<!--        <div class="cases__item&#45;&#45;list">-->
-<!--          <div class="cases__item&#45;&#45;item"><h3>1</h3></div>-->
-<!--        </div>-->
-<!--        <div class="cases__item&#45;&#45;list">-->
-<!--          <div class="cases__item&#45;&#45;item"><h3>1</h3></div>-->
-<!--        </div>-->
-<!--        <div class="cases__item&#45;&#45;list">-->
-<!--          <div class="cases__item&#45;&#45;item"><h3>1</h3></div>-->
-<!--        </div>-->
-<!--        <div class="cases__item&#45;&#45;list">-->
-<!--          <div class="cases__item&#45;&#45;item"><h3>1</h3></div>-->
-<!--        </div>-->
-<!--      </VueSlickCarousel>-->
-<!--    </div>-->
     <div class="cases__wrapper">
       <VueSlickCarousel v-bind="slickOptions">
         <div v-for="(item, i) in items" :key="i" class="cases__item--list">
@@ -69,7 +53,7 @@
           infinite: true,
           autoplay: true,
           autoplaySpeed: 5000,
-          speed: 3000,
+          speed: 1000,
           arrows: false,
           responsive: [
             {
@@ -157,11 +141,20 @@
     background-color: rgba(0, 0, 0, .8);
   }
   .cases__title {
+    letter-spacing: 15px;
     text-align: center;
     margin: auto;
     font-size: 62px;
     text-transform: uppercase;
   }
+
+  @media screen and (max-width: 600px) {
+    .cases__title {
+      font-size: 45px;
+      letter-spacing: 5px;
+    }
+  }
+
   .cases__wrapper {
     margin-top: -220px;
     padding-left: 40px;
@@ -169,6 +162,7 @@
     position: relative;
   }
   .cases__item--list {
+    margin-bottom: 75px !important;
     background-color: #2f6464;
     display: flex;
     margin: 0 -10px;

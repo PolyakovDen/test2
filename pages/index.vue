@@ -4,6 +4,7 @@
     <VideoBackground />
     <Services />
     <Cases />
+    <Advantages />
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import Header from '~/components/Header'
 import VideoBackground from "~/components/VideoBackground";
 import Services from '~/components/Services'
-import Cases from "~/components/Cases";
+import Cases from '~/components/Cases'
+import Advantages from '~/components/Advantages'
 export default {
   components: {
     Header,
     VideoBackground,
     Services,
-    Cases
+    Cases,
+    Advantages
   }
 }
 </script>
