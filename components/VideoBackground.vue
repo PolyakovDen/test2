@@ -1,13 +1,5 @@
 <template>
   <div class="">
-<!--    <div class="hidden-sm-and-down">-->
-<!--      <div class="block">-->
-<!--        <video class="background-video" autoplay muted loop>-->
-<!--          <source src="/video.mp4" type="video/mp4">-->
-<!--        </video>-->
-<!--        <div class="overlay"></div>-->
-<!--      </div>-->
-<!--    </div>-->
     <div class="hidden-sm-and-down bg-video__wrapper">
       <div class="bg-video">
         <h1 class="main__title">

@@ -57,10 +57,20 @@
     text-transform: uppercase;
   }
 
+  @media screen and (max-width: 900px) {
+    .advantages__title {
+      font-size: 55px;
+    }
+  }
   @media screen and (max-width: 600px) {
     .advantages__title {
-      font-size: 45px;
+      font-size: 40px;
       letter-spacing: 5px;
+    }
+  }
+  @media screen and (max-width: 340px) {
+    .advantages__title {
+      word-wrap: break-word;
     }
   }
 
