@@ -1,8 +1,8 @@
 <template>
   <div class="mb-12">
     <Dialog
-      :dialog='dialog'
-      :item='item'
+      :dialog="dialog"
+      :item="item"
       :handle-close="handleClose"
     />
     <div class="services__item--img-block">
@@ -10,32 +10,34 @@
         <img class="services__item--img" :src="item.src" :alt="item.description">
       </button>
     </div>
-    <p class="services__item--description">{{ item.description }}</p>
+    <p class="services__item--description">
+      {{ item.description }}
+    </p>
   </div>
 </template>
 
 <script>
-  import Dialog from "~/components/Dialog";
-  export default {
-    name: "ServicesCard",
-    components: {
-      Dialog
-    },
-    data: () => ({
-      dialog: false
-    }),
-    props: {
-      item: {
-        type: Object,
-        required: true
-      }
-    },
-    methods: {
-      handleClose () {
-        this.dialog = false;
-      }
+import Dialog from '~/components/Dialog'
+export default {
+  name: 'ServicesCard',
+  components: {
+    Dialog
+  },
+  props: {
+    item: {
+      type: Object,
+      required: true
+    }
+  },
+  data: () => ({
+    dialog: false
+  }),
+  methods: {
+    handleClose () {
+      this.dialog = false
     }
   }
+}
 </script>
 
 <style scoped>

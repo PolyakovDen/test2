@@ -5,8 +5,9 @@
         <v-img
           src="/logo.png"
           max-height="40"
-          max-width="80"></v-img>
-        <v-spacer></v-spacer>
+          max-width="80"
+        />
+        <v-spacer />
         <v-toolbar-items class="hidden-sm-and-down">
           <v-btn v-for="(item, index) in items" :key="index" text>
             {{ item.title }}

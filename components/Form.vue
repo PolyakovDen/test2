@@ -30,24 +30,24 @@
                 :rules="nameRules"
                 label="Имя"
                 required
-              ></v-text-field>
+              />
               <v-text-field
                 v-model="email"
                 :rules="emailRules"
                 label="E-mail"
                 required
-              ></v-text-field>
+              />
               <v-text-field
                 v-model="number"
                 :rules="numberRules"
                 label="Номер телефона"
                 required
-              ></v-text-field>
+              />
               <v-text-field
                 v-model="number"
                 label="Примечание"
                 required
-              ></v-text-field>
+              />
               <v-btn
                 :disabled="!valid"
                 color="#f0f0f0"
@@ -67,32 +67,32 @@
 </template>
 
 <script>
-  export default {
-    name: "Form",
-    data: () => ({
-      valid: true,
-      name: '',
-      nameRules: [
-        v => !!v || 'Заполните имя пожалуйста',
-        v => (v && v.length <= 10) || 'Имя должно быть меньше 10 символов',
-      ],
-      email: '',
-      emailRules: [
-        v => !!v || 'Заполните E-mail пожалуйста',
-        v => /.+@.+\..+/.test(v) || 'E-mail должен быть формата: test@test.com',
-      ],
-      number: '',
-      numberRules: [
-        v => !!v || 'Заполните телефон пожалуйста',
-      ],
-      note: ''
-    }),
-    methods: {
-      validate() {
-        this.$refs.form.validate()
-      }
+export default {
+  name: 'Form',
+  data: () => ({
+    valid: true,
+    name: '',
+    nameRules: [
+      v => !!v || 'Заполните имя пожалуйста',
+      v => (v && v.length <= 10) || 'Имя должно быть меньше 10 символов'
+    ],
+    email: '',
+    emailRules: [
+      v => !!v || 'Заполните E-mail пожалуйста',
+      v => /.+@.+\..+/.test(v) || 'E-mail должен быть формата: test@test.com'
+    ],
+    number: '',
+    numberRules: [
+      v => !!v || 'Заполните телефон пожалуйста'
+    ],
+    note: ''
+  }),
+  methods: {
+    validate () {
+      this.$refs.form.validate()
     }
   }
+}
 </script>
 
 <style scoped>
