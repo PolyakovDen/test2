@@ -4,10 +4,11 @@
       :dialog="dialog"
       :item="item"
       :handle-close="handleClose"
+      :icon-close="iconClose"
     />
     <div class="services__item--img-block">
       <button @click="dialog = true">
-        <img class="services__item--img" :src="item.src" :alt="item.description">
+        <img class="services__item--img" data-aos="slide-up" :src="item.src" :alt="item.description">
       </button>
     </div>
     <p class="services__item--description">
@@ -34,6 +35,9 @@ export default {
   }),
   methods: {
     handleClose () {
+      this.dialog = false
+    },
+    iconClose () {
       this.dialog = false
     }
   }

@@ -3,8 +3,11 @@
     <div class="form__block">
       <div class="form__block--wrapper">
         <div class="form__title--block">
-          <h2 class="form__title">
-            Заполни форму и получи специальное предложение
+          <h2 class="form__title" data-aos="fade-up">
+            Оставьте заявку и
+            получите расчет
+            стоимости вашего
+            проекта уже сегодня
           </h2>
         </div>
       </div>
@@ -43,9 +46,10 @@
                 label="Номер телефона"
                 required
               />
-              <v-text-field
-                v-model="number"
+              <v-textarea
+                v-model="annotation"
                 label="Примечание"
+                auto-grow
                 required
               />
               <v-btn
@@ -85,7 +89,7 @@ export default {
     numberRules: [
       v => !!v || 'Заполните телефон пожалуйста'
     ],
-    note: ''
+    annotation: ''
   }),
   methods: {
     validate () {
@@ -111,7 +115,7 @@ export default {
     display: flex;
     margin: auto;
     align-items: flex-end;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
   }
   .form__title {
     max-width: 700px;

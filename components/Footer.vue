@@ -1,19 +1,19 @@
 <template>
   <div class="footer elevation-23">
     <v-container fluid class="pa-0">
-      <h2 class="footer__title text-center pt-6">Наши контакты</h2>
+      <h2 class="footer__title text-center pt-6" data-aos="flip-up">Наши контакты</h2>
       <div class="footer__wrapper pa-10 pb-5 d-flex justify-space-between flex-wrap">
         <div class="footer__contacts">
           <div class="email d-flex">
-            <img src="/envelope.png" class="mr-3" width="26" height="20">
+            <img src="/envelope.png" class="mr-4 mt-1" width="25" height="18">
             <p>new_startdigital@gmail.com</p>
           </div>
           <div class="telephone d-flex">
-            <img src="/phone-ringing.png" class="mr-2" width="29" height="28">
+            <img src="/phone-ringing.png" class="mr-4" width="25" height="24">
             <p>+380937390565</p>
           </div>
           <div class="location d-flex">
-            <img src="/placeholder.png" class="mr-3" width="23" height="27">
+            <img src="/placeholder.png" class="mr-5" width="22" height="25">
             <p>Киев, Украина</p>
           </div>
         </div>

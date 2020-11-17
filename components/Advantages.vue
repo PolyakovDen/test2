@@ -1,10 +1,10 @@
 <template>
   <div class="advantages">
-    <h2 class="advantages__title">
+    <h2 class="advantages__title" data-aos="flip-up">
       Преимущества компании
     </h2>
-    <div class="advantages__list d-flex justify-space-around flex-wrap">
-      <div class="advantages__item" v-for="(item, i) in items" :key="i">
+    <div class="mb-10 advantages__list d-flex justify-space-around flex-wrap" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+      <div v-for="(item, i) in items" :key="i" class="advantages__item">
         <div class="flip-card mb-5">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -21,31 +21,31 @@
 </template>
 
 <script>
-  export default {
-    name: "Advantages",
-    data () {
-      return {
-        items: [
-          {
-            text: 'Hello from Den',
-            src: 'money1.png'
-          },
-          {
-            text: 'Hello from Stas',
-            src: 'money2.png'
-          },
-          {
-            text: 'lorem lorem lorem lorem',
-            src: 'money1.png'
-          },
-          {
-            text: 'Hello from ipsum ipsum',
-            src: 'money2.png'
-          }
-        ]
-      }
+export default {
+  name: 'Advantages',
+  data () {
+    return {
+      items: [
+        {
+          text: 'Hello from Den',
+          src: 'money1.png'
+        },
+        {
+          text: 'Hello from Stas',
+          src: 'money2.png'
+        },
+        {
+          text: 'lorem lorem lorem lorem',
+          src: 'money1.png'
+        },
+        {
+          text: 'Hello from ipsum ipsum',
+          src: 'money2.png'
+        }
+      ]
     }
   }
+}
 </script>
 
 <style scoped>

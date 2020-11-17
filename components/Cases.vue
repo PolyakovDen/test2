@@ -2,7 +2,7 @@
   <div class="">
     <div class="cases__block">
       <div class="cases__block--wrapper">
-        <h2 class="cases__title">
+        <h2 class="cases__title" data-aos="flip-up">
           Успешные кейсы
         </h2>
       </div>

@@ -8,7 +8,7 @@
           какой бюджет вы готовы выделять на это
         </h1>
       </div>
-      <video class="background-video" autoplay muted loop>
+      <video class="background-video" poster="/header-bg.png" autoplay muted loop>
         <source src="/video.mp4" type="video/mp4">
       </video>
     </div>
@@ -25,9 +25,9 @@
 </template>
 
 <script>
-  export default {
-    name: "VideoBackground"
-  }
+export default {
+  name: 'VideoBackground'
+}
 </script>
 
 <style scoped>
@@ -68,7 +68,9 @@
   }
 
   .main__title {
-    color: white;
+    background-color: rgba(255, 255, 255, .3);
+    color: rgba(0, 0, 0, .8);
+    border-radius: 10px;
     width: 90%;
     text-align: center;
     margin: auto;

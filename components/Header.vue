@@ -2,14 +2,16 @@
   <v-app-bar class="main__navigation" color="black" fixed app elevate-on-scroll>
     <v-container fluid class="pa-0">
       <div class="d-flex justify-space-between">
-        <v-img
-          src="/logo.png"
-          max-height="40"
-          max-width="80"
-        />
+        <nuxt-link to="/">
+          <v-img
+            src="/logo.png"
+            max-height="40"
+            max-width="80"
+          />
+        </nuxt-link>
         <v-spacer />
         <v-toolbar-items class="hidden-sm-and-down">
-          <v-btn v-for="(item, index) in items" :key="index" text>
+          <v-btn class="toolbar__items" v-for="(item, index) in items" :key="index" text>
             {{ item.title }}
           </v-btn>
         </v-toolbar-items>
@@ -59,7 +61,10 @@ export default {
 
 <style scoped>
   .container {
-    max-width: 1300px !important;
+    max-width: 1200px !important;
+  }
+  .toolbar__items {
+    letter-spacing: 2px;
   }
   .menu__link {
     cursor: pointer;
