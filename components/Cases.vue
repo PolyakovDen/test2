@@ -9,7 +9,7 @@
     </div>
     <div class="cases__wrapper">
       <VueSlickCarousel v-bind="slickOptions">
-        <div v-for="(item, i) in items" :key="i" class="cases__item--list">
+        <div data-aos="fade-left" v-for="(item, i) in items" :key="i" class="cases__item--list">
           <div class="cases__item--item">
             <div class="cases__item--header">
               <span class="cases__item--header-text">Заказчик:</span>

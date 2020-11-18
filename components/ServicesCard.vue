@@ -8,7 +8,7 @@
     />
     <div class="services__item--img-block">
       <button @click="dialog = true">
-        <img class="services__item--img" data-aos="slide-up" :src="item.src" :alt="item.description">
+        <img class="services__item--img" data-aos="zoom-in" :src="item.src" :alt="item.description">
       </button>
     </div>
     <p class="services__item--description">

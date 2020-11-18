@@ -3,8 +3,8 @@
     <h2 class="advantages__title" data-aos="flip-up">
       Преимущества компании
     </h2>
-    <div class="mb-10 advantages__list d-flex justify-space-around flex-wrap" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-      <div v-for="(item, i) in items" :key="i" class="advantages__item">
+    <div class="mb-10 advantages__list d-flex justify-space-around flex-wrap">
+      <div data-aos="flip-right" data-aos-duration="700" data-aos-easing="ease-in-sine" v-for="(item, i) in items" :key="i" class="advantages__item">
         <div class="flip-card mb-5">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -121,8 +121,8 @@ export default {
   }
 
   .flip-card-back {
-    background-color: #2980b9;
     color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     transform: rotateY(180deg);
   }
 </style>

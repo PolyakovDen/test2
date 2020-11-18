@@ -1,5 +1,5 @@
 <template>
-  <div class="footer elevation-23">
+  <div class="footer elevation-23 pb-5">
     <v-container fluid class="pa-0">
       <h2 class="footer__title text-center pt-6" data-aos="flip-up">Наши контакты</h2>
       <div class="footer__wrapper pa-10 pb-5 d-flex justify-space-between flex-wrap">
@@ -37,6 +37,11 @@
             <img src="/telegram.png" alt="telegram">
           </a>
         </div>
+      </div>
+      <div class="privacy text-center mt-8">
+        <nuxt-link to="/privacy" class="privacy__link">
+          <p class="privacy__title mb-0"><span>© 2020 EU.</span> All rights reserved. <span>T&C</span></p>
+        </nuxt-link>
       </div>
     </v-container>
   </div>
@@ -76,5 +81,14 @@ export default {
     .footer__socials {
       margin-top: 30px;
     }
+  }
+  .privacy__link {
+    display: inline-block;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .privacy__title span {
+    font-style: italic;
   }
 </style>
