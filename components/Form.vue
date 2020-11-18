@@ -17,6 +17,7 @@
         ref="form"
         v-model="valid"
         lazy-validation
+        netlify
       >
         <v-container>
           <v-row justify="center">
