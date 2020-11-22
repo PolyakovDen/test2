@@ -27,19 +27,19 @@ export default {
     return {
       items: [
         {
-          text: 'Hello from Den',
+          text: 'Несем финансовую ответственность за результат',
           src: 'money1.png'
         },
         {
-          text: 'Hello from Stas',
+          text: 'Умножаем не только заявки, но и продажи',
           src: 'money2.png'
         },
         {
-          text: 'lorem lorem lorem lorem',
+          text: 'Предоставляем комплекс услуг по продвижению',
           src: 'money1.png'
         },
         {
-          text: 'Hello from ipsum ipsum',
+          text: 'Обеспечиваем поддержку по завершению проекта',
           src: 'money2.png'
         }
       ]
@@ -121,6 +121,8 @@ export default {
   }
 
   .flip-card-back {
+    padding-top: 30px;
+    font-size: 12px;
     color: white;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     transform: rotateY(180deg);

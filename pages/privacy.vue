@@ -2,7 +2,7 @@
   <div class="">
     <Header />
     <Privacy />
-<!--    <Footer />-->
+    <Footer />
   </div>
 </template>
 
