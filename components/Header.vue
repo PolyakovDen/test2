@@ -30,6 +30,7 @@
             <v-list-item
               v-for="(item, index) in items"
               :key="index"
+              :to="item.link"
             >
               <v-list-item-title class="menu__link">
                 {{ item.title }}
@@ -48,11 +49,11 @@ export default {
   data () {
     return {
       items: [
-        { title: 'Главная' },
-        { title: 'Услуги' },
-        { title: 'Про нас' },
-        { title: 'Кейсы' },
-        { title: 'Контакты' }
+        { link:'/', title: 'Главная' },
+        { link:'/Services', title: 'Услуги' },
+        { link:'/', title: 'Про нас' },
+        { link:'/Cases', title: 'Кейсы' },
+        { link:'/Footer', title: 'Контакты' }
       ]
     }
   }
