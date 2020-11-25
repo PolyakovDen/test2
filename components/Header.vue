@@ -62,7 +62,7 @@ export default {
 
 <style scoped>
   .container {
-    max-width: 1200px !important;
+    max-width: 1400px !important;
   }
   .toolbar__items {
     letter-spacing: 2px;

@@ -55,7 +55,7 @@ export default {
 
 <style scoped>
   .container {
-    max-width: 1100px !important;
+    max-width: 1400px !important;
   }
   .footer__wrapper {
     border-bottom: 2px solid !important;

@@ -2,6 +2,7 @@
   <div class="main__wrapper">
     <Header />
     <VideoBackground />
+    <AboutUs />
     <Services />
     <Cases />
     <Advantages />
@@ -13,6 +14,7 @@
 <script>
 import Header from '~/components/Header'
 import VideoBackground from '~/components/VideoBackground'
+import AboutUs from '~/components/AboutUs'
 import Services from '~/components/Services'
 import Cases from '~/components/Cases'
 import Advantages from '~/components/Advantages'
@@ -22,6 +24,7 @@ export default {
   components: {
     Header,
     VideoBackground,
+    AboutUs,
     Services,
     Cases,
     Advantages,
