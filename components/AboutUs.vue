@@ -2,39 +2,49 @@
   <div class="about-us__wrapper" id="about-us">
     <div class="about-us__block">
       <v-container fluid class="pa-0">
-        <div class="about-us__section d-flex justify-space-between flex-wrap mt-16 pl-5 pr-5">
-          <div class="about-us__slider">
-            <div data-aos="fade-right" data-aos-duration="1400">
-              <h2 class="about-us__slider--title">О компании</h2>
-              <div class="about-us__slider--wrapper">
-                <VueSlickCarousel v-bind="slickOptions">
-                  <div v-for="(item, i) in items" :key="i" class="about-us__list" >
-                    <div class="about-us__item">
-                      <p class="about-us__item">{{ item.description }}</p>
+        <v-row no-gutters justify-lg="space-between" justify-md="center" justify-sm="center" class="pl-10 pr-10" >
+          <v-col
+            lg="5"
+            md="8"
+            sm="4">
+            <div class="about-us__slider">
+              <div data-aos="fade-right" data-aos-duration="1400">
+                <h2 class="about-us__slider--title">О компании</h2>
+                <div class="about-us__slider--wrapper">
+                  <VueSlickCarousel v-bind="slickOptions">
+                    <div v-for="(item, i) in items" :key="i" class="about-us__list" >
+                      <div class="about-us__item">
+                        <p class="about-us__item">{{ item.description }}</p>
+                      </div>
                     </div>
-                  </div>
-                </VueSlickCarousel>
+                  </VueSlickCarousel>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="about-us" data-aos="fade-left" data-aos-duration="1400">
-            <h3 class="about-us__title">
-              <span class="about-us__main--title">New Start</span> - это
-            </h3>
-            <p class="about-us__description">
-              100 + <br>
-              <span>проектов</span>
-            </p>
-            <p class="about-us__description">
-              80 + <br>
-              <span>клиентов</span>
-            </p>
-            <p class="about-us__description">
-              25 + <br>
-              <span>ниш</span>
-            </p>
-          </div>
-        </div>
+          </v-col>
+          <v-col
+            lg="5"
+            md="10"
+            sm="4">
+            <div class="about-us" data-aos="fade-left" data-aos-duration="1400">
+              <h3 class="about-us__title">
+                <span class="about-us__main--title">New Start</span> - это
+              </h3>
+              <p class="about-us__description">
+                100 + <br>
+                <span>проектов</span>
+              </p>
+              <p class="about-us__description">
+                80 + <br>
+                <span>клиентов</span>
+              </p>
+              <p class="about-us__description">
+                25 + <br>
+                <span>ниш</span>
+              </p>
+            </div>
+          </v-col>
+        </v-row>
       </v-container>
     </div>
   </div>
@@ -97,20 +107,20 @@
     width: 1500px;
   }
   .about-us__wrapper {
-    background-image: url("/test.png");
+    background-image: url("/aboutUs-bg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
   .about-us__block {
-    display: flex;
-    height: 100vh;
+    /*display: flex;*/
+    /*height: 100vh;*/
   }
-  .about-us__slider,
-  .about-us {
-    width: 600px;
-  }
+  /*.about-us__slider,*/
+  /*.about-us {*/
+  /*  width: 600px;*/
+  /*}*/
   .about-us__slider--title {
     letter-spacing: 15px;
     text-align: center;
@@ -188,5 +198,14 @@
     right: -20px;
     top: 50px;
     background: url('/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+  }
+  @media screen and (max-width: 1264px) {
+    .about-us__slider--title {
+      margin-top: 40px;
+    }
+    .about-us__title {
+      margin-top: 50px;
+      text-align: center;
+    }
   }
 </style>
