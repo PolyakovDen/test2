@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="" id="cases">
     <div class="cases__block">
       <div class="cases__block--wrapper">
         <h2 class="cases__title" data-aos="flip-up">

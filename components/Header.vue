@@ -11,7 +11,7 @@
         </nuxt-link>
         <v-spacer />
         <v-toolbar-items class="hidden-sm-and-down">
-          <v-btn class="toolbar__items" v-for="(item, index) in items" :key="index" text>
+          <v-btn v-scroll-to="item.link" class="toolbar__items" v-for="(item, index) in items" :key="index" text>
             {{ item.title }}
           </v-btn>
         </v-toolbar-items>
@@ -30,7 +30,7 @@
             <v-list-item
               v-for="(item, index) in items"
               :key="index"
-              :to="item.link"
+              v-scroll-to="item.link"
             >
               <v-list-item-title class="menu__link">
                 {{ item.title }}
@@ -49,13 +49,15 @@ export default {
   data () {
     return {
       items: [
-        { link:'/', title: 'Главная' },
-        { link:'/Services', title: 'Услуги' },
-        { link:'/', title: 'Про нас' },
-        { link:'/Cases', title: 'Кейсы' },
-        { link:'/Footer', title: 'Контакты' }
+        { link:'#main', title: 'Главная' },
+        { link:'#about-us', title: 'Про нас' },
+        { link:'#services', title: 'Услуги' },
+        { link:'#cases', title: 'Кейсы' },
+        { link:'#footer', title: 'Контакты' }
       ]
     }
+  },
+  mounted() {
   }
 }
 </script>

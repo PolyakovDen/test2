@@ -1,21 +1,23 @@
 <template>
-  <div class="about-us__wrapper">
+  <div class="about-us__wrapper" id="about-us">
     <div class="about-us__block">
       <v-container fluid class="pa-0">
         <div class="about-us__section d-flex justify-space-between flex-wrap mt-16 pl-5 pr-5">
           <div class="about-us__slider">
-            <h2 class="about-us__slider--title">О компании</h2>
-            <div class="about-us__slider--wrapper">
-              <VueSlickCarousel v-bind="slickOptions">
-                <div v-for="(item, i) in items" :key="i" class="about-us__list" >
-                  <div class="about-us__item">
-                    <p class="about-us__item">{{ item.description }}</p>
+            <div data-aos="fade-right" data-aos-duration="1400">
+              <h2 class="about-us__slider--title">О компании</h2>
+              <div class="about-us__slider--wrapper">
+                <VueSlickCarousel v-bind="slickOptions">
+                  <div v-for="(item, i) in items" :key="i" class="about-us__list" >
+                    <div class="about-us__item">
+                      <p class="about-us__item">{{ item.description }}</p>
+                    </div>
                   </div>
-                </div>
-              </VueSlickCarousel>
+                </VueSlickCarousel>
+              </div>
             </div>
           </div>
-          <div class="about-us">
+          <div class="about-us" data-aos="fade-left" data-aos-duration="1400">
             <h3 class="about-us__title">
               <span class="about-us__main--title">New Start</span> - это
             </h3>

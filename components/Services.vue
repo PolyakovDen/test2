@@ -1,5 +1,5 @@
 <template>
-  <div class="services">
+  <div class="services" id="services">
     <div class="services__header elevation-20">
       <h2 class="services__header--item" data-aos="flip-up">
         Наши услуги

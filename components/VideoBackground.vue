@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="" id="main">
     <div class="hidden-sm-and-down bg-video__wrapper">
       <div class="bg-video">
         <h1 class="main__title">

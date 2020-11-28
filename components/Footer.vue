@@ -1,5 +1,5 @@
 <template>
-  <div class="footer elevation-23 pb-5">
+  <div class="footer elevation-23 pb-5" id="footer">
     <v-container fluid class="pa-0">
       <h2 class="footer__title text-center pt-6" data-aos="flip-up">Наши контакты</h2>
       <div class="footer__wrapper pa-10 pb-5 d-flex justify-space-between flex-wrap">
