@@ -65,17 +65,15 @@
           arrows: true,
           responsive: [
             {
-              breakpoint: 700,
+              breakpoint: 600,
               settings: {
-                slidesToShow: 2,
-                arrows: true,
+                slidesToShow: 2
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 450,
               settings: {
-                slidesToShow: 1,
-                arrows: true,
+                slidesToShow: 1
               }
             }
           ]
@@ -153,11 +151,14 @@
     font-size: 30px;
   }
   .about-us__slider--wrapper {
+    max-width: 600px !important;
+    margin: auto;
     margin-top: 100px;
     position: relative;
   }
   .about-us__list {
     display: flex;
+    justify-content: center;
   }
   .about-us__item {
     background-color: #2f6464;
@@ -224,6 +225,14 @@
     }
     .about-us__description {
       font-size: 46px;
+    }
+    .about-us__slider--wrapper {
+      max-width: 400px !important;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .about-us__slider--wrapper {
+      max-width: 200px !important;
     }
   }
   @media screen and (max-width: 340px) {
