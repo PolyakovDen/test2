@@ -69,7 +69,7 @@ export default {
   }
   @media screen and (max-width: 600px) {
     .advantages__title {
-      font-size: 40px;
+      font-size: 37px;
       letter-spacing: 5px;
     }
   }

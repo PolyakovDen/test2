@@ -20,7 +20,7 @@
         netlify
       >
         <v-container>
-          <v-row justify="center">
+          <v-row justify="center" class="pa-2">
             <v-col
               class="test pa-8 pb-3"
               cols="12"

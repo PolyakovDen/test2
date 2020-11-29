@@ -91,4 +91,9 @@ export default {
   .privacy__title span {
     font-style: italic;
   }
+  @media screen and (max-width: 340px) {
+    .footer__contacts {
+      font-size: 16px;
+    }
+  }
 </style>

@@ -2,11 +2,11 @@
   <div class="about-us__wrapper" id="about-us">
     <div class="about-us__block">
       <v-container fluid class="pa-0">
-        <v-row no-gutters justify-lg="space-between" justify-md="center" justify-sm="center" class="pl-10 pr-10" >
+        <v-row no-gutters justify-lg="space-between" justify-md="center" justify-sm="center" class="pl-10 pr-10 pb-16" >
           <v-col
             lg="5"
             md="8"
-            sm="4">
+            sm="12">
             <div class="about-us__slider">
               <div data-aos="fade-right" data-aos-duration="1400">
                 <h2 class="about-us__slider--title">О компании</h2>
@@ -25,7 +25,7 @@
           <v-col
             lg="5"
             md="10"
-            sm="4">
+            sm="12">
             <div class="about-us" data-aos="fade-left" data-aos-duration="1400">
               <h3 class="about-us__title">
                 <span class="about-us__main--title">New Start</span> - это
@@ -122,6 +122,7 @@
   /*  width: 600px;*/
   /*}*/
   .about-us__slider--title {
+    padding-top: 70px;
     letter-spacing: 15px;
     text-align: center;
     margin: auto;
@@ -129,6 +130,7 @@
     text-transform: uppercase;
   }
   .about-us__title {
+    padding-top: 70px;
     font-size: 50px;
     letter-spacing: 10px;
     font-weight: lighter;
@@ -200,12 +202,33 @@
     background: url('/sl-arrow_r.svg') 0 0 / 100% no-repeat;
   }
   @media screen and (max-width: 1264px) {
+    .about-us__title {
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 900px) {
     .about-us__slider--title {
-      margin-top: 40px;
+      font-size: 55px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .about-us__slider--title {
+      font-size: 45px;
+      letter-spacing: 5px;
     }
     .about-us__title {
-      margin-top: 50px;
-      text-align: center;
+      font-size: 35px;
+    }
+    .about-us__main--title {
+      font-size: 40px;
+    }
+    .about-us__description {
+      font-size: 46px;
+    }
+  }
+  @media screen and (max-width: 340px) {
+    .about-us__slider--title {
+      word-wrap: break-word;
     }
   }
 </style>
