@@ -17,5 +17,6 @@ export default {
 <style scoped>
   .default {
     background-color: #2f6565;
+    overflow-x: hidden;
   }
 </style>

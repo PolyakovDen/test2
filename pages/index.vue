@@ -3,11 +3,11 @@
     <Header />
     <VideoBackground />
     <AboutUs />
-    <Services />
-    <Cases />
-    <Advantages />
-    <Form />
-    <Footer />
+<!--    <Services />-->
+<!--    <Cases />-->
+<!--    <Advantages />-->
+<!--    <Form />-->
+<!--    <Footer />-->
   </div>
 </template>
 
