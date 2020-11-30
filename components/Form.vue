@@ -17,7 +17,7 @@
         ref="form"
         v-model="valid"
         lazy-validation
-        netlify
+        data-netlify="true"
       >
         <v-container>
           <v-row justify="center" class="pa-2">
@@ -53,6 +53,9 @@
                 auto-grow
                 required
               />
+              <div class="field">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
               <v-btn
                 :disabled="!valid"
                 color="#f0f0f0"
