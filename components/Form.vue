@@ -15,10 +15,13 @@
     <div class="form">
       <v-form
         ref="form"
+        name="formPost"
         v-model="valid"
         lazy-validation
+        method="POST"
         data-netlify="true"
       >
+        <input type="hidden" name="form-name" value="formPost" />
         <v-container>
           <v-row justify="center" class="pa-2">
             <v-col
@@ -30,6 +33,7 @@
             >
               <v-text-field
                 v-model="name"
+                name="name"
                 :counter="10"
                 :rules="nameRules"
                 label="Имя"
@@ -37,18 +41,21 @@
               />
               <v-text-field
                 v-model="email"
+                name="email"
                 :rules="emailRules"
                 label="E-mail"
                 required
               />
               <v-text-field
                 v-model="number"
+                name="number"
                 :rules="numberRules"
                 label="Номер телефона"
                 required
               />
               <v-textarea
                 v-model="annotation"
+                name="annotation"
                 label="Примечание"
                 auto-grow
                 required
@@ -63,6 +70,7 @@
                 block
                 class="mr-4"
                 @click="validate"
+                type="submit"
               >
                 Отправить
               </v-btn>
