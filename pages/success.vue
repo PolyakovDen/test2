@@ -1,12 +1,17 @@
 <template>
-  <div class="success">
-    <v-container>
-      <div class="success__messages">
-        <p class="text-center">Спасибо за ваше сообщение.</p>
-        <p class="text-center">Мы свяжемся с вами в ближайшее время.</p>
-      </div>
+<!--  <div class="success&#45;&#45;page">-->
+    <v-container fluid fill-height class="success--page">
+      <v-row justify="center" align="center">
+        <v-col lg="7" md="8" sm="10">
+          <div class="success__messages pt-10 pb-10">
+            <p class="text-center success__messages--text">Спасибо за ваше сообщение.</p>
+            <p class="text-center success__messages--text">Мы свяжемся с вами в ближайшее время.</p>
+            <nuxt-link class="link__home pl-10" to="/"><- Вернуться на главную</nuxt-link>
+          </div>
+        </v-col>
+      </v-row>
     </v-container>
-  </div>
+<!--  </div>-->
 </template>
 
 <script>
@@ -16,10 +21,19 @@
 </script>
 
 <style scoped>
-  .success {
-    background-color: #000000;
+  .success--page {
+    background-color: #0F4C5C;
   }
   .success__messages {
-    background-color: #f3ca20;
+    border-radius: 10px;
+    background-color: #E36414;
+  }
+  .success__messages--text {
+    font-size: 21px;
+    color: #5F0F40;
+  }
+  .link__home {
+    text-decoration: none;
+    color: #0f4c5c;
   }
 </style>
