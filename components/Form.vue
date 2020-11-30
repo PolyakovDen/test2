@@ -19,6 +19,7 @@
         v-model="valid"
         lazy-validation
         method="POST"
+        action="/success"
         data-netlify="true"
       >
         <input type="hidden" name="form-name" value="formPost" />
@@ -60,9 +61,9 @@
                 auto-grow
                 required
               />
-              <div class="field">
-                <div data-netlify-recaptcha="true"></div>
-              </div>
+<!--              <div class="field">-->
+<!--                <div data-netlify-recaptcha="true"></div>-->
+<!--              </div>-->
               <v-btn
                 :disabled="!valid"
                 color="#f0f0f0"
