@@ -105,20 +105,12 @@
     width: 1500px;
   }
   .about-us__wrapper {
-    background-image: url("/aboutUs-bg.png");
+    background-image: url("/aboutUs-bg.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
-  .about-us__block {
-    /*display: flex;*/
-    /*height: 100vh;*/
-  }
-  /*.about-us__slider,*/
-  /*.about-us {*/
-  /*  width: 600px;*/
-  /*}*/
   .about-us__slider--title {
     padding-top: 70px;
     letter-spacing: 15px;

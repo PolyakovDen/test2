@@ -129,7 +129,7 @@
 
 <style scoped>
   .cases__block {
-    background-image: url("/cases-bg.png");
+    background-image: url("/cases-bg.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;

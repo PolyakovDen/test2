@@ -114,7 +114,7 @@ export default {
 
 <style scoped>
   .form__block {
-    background-image: url("/form-bg.png");
+    background-image: url("/form-bg.webp");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;

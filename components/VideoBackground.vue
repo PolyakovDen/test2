@@ -8,7 +8,7 @@
           какой бюджет вы готовы выделять на это
         </h1>
       </div>
-      <video class="background-video" poster="/header-bg.png" autoplay muted loop>
+      <video class="background-video" poster="/header-bg.webp" autoplay muted loop>
         <source src="/video.mp4" type="video/mp4">
       </video>
     </div>
@@ -46,7 +46,7 @@ export default {
   }
 
   .bg-without-video__wrapper {
-    background-image: url("/header-bg.png");
+    background-image: url("/header-bg.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
