@@ -8,7 +8,7 @@
         <div class="flip-card mb-5">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img class="flip-card-front--img" :src="item.src" alt="">
+              <img class="flip-card-front--img" :src="item.src" alt="" width="160" height="160">
             </div>
             <div class="flip-card-back">
               <h1>{{ item.text }}</h1>
@@ -28,19 +28,19 @@ export default {
       items: [
         {
           text: 'Несем финансовую ответственность за результат',
-          src: 'money1.png'
+          src: 'money.png'
         },
         {
           text: 'Умножаем не только заявки, но и продажи',
-          src: 'money2.png'
+          src: 'sales.png'
         },
         {
           text: 'Предоставляем комплекс услуг по продвижению',
-          src: 'money1.png'
+          src: 'social.png'
         },
         {
           text: 'Обеспечиваем поддержку по завершению проекта',
-          src: 'money2.png'
+          src: 'support.png'
         }
       ]
     }
