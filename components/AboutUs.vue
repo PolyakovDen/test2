@@ -14,7 +14,7 @@
                   <VueSlickCarousel v-bind="slickOptions">
                     <div v-for="(item, i) in items" :key="i" class="about-us__list" >
                       <div class="about-us__item">
-                        <p class="about-us__item">{{ item.description }}</p>
+                        <p class="about-us__item--item">{{ item.description }}</p>
                       </div>
                     </div>
                   </VueSlickCarousel>
@@ -151,12 +151,17 @@
   .about-us__list {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
   }
   .about-us__item {
     background-color: #2f6464;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     width: 140px;
     height: 140px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
     text-align: center;
     font-size: 19px;
   }
