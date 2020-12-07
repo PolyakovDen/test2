@@ -18,22 +18,22 @@
           </div>
         </div>
         <div class="footer__socials d-flex justify-space-between flex-wrap">
-          <a href="" class="footer__socials--item mr-5">
+          <a href="https://www.facebook.com/New-Start-digital-agency-102363131638534/" class="footer__socials--item mr-5" target="_blank">
             <img src="/facebook.png" alt="facebook">
           </a>
-          <a href="" class="footer__socials--item mr-5">
+          <a href="https://instagram.com/newstart_digital?igshid=trw2jutbn4fh" class="footer__socials--item mr-5" target="_blank">
             <img src="/instagram.png" alt="instagram">
           </a>
-          <a href="" class="footer__socials--item">
+          <a href="https://www.linkedin.com/company/new-start-digital-agency" class="footer__socials--item" target="_blank">
             <img src="/linkedin.png" alt="linkedin">
           </a>
-          <a href="" class="footer__socials--item mr-5 mt-3">
+          <a href="https://wa.me/0937390565" class="footer__socials--item mr-5 mt-3">
             <img src="/whatsapp.png" alt="whatsapp">
           </a>
-          <a href="" class="footer__socials--item mr-5 mt-3">
+          <a href="viber://chat?number=0937390565" class="footer__socials--item mr-5 mt-3">
             <img src="/viber.png" alt="viber">
           </a>
-          <a href="" class="footer__socials--item mt-3">
+          <a href="tg://resolve?domain=dmytroyep" class="footer__socials--item mt-3">
             <img src="/telegram.png" alt="telegram">
           </a>
         </div>
