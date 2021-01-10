@@ -15,25 +15,27 @@
               <span class="cases__item--header-text">Заказчик:</span>
               <h2 class="cases__item--header-title">{{ item.title }}</h2>
             </div>
-            <div class="cases__item--task cases__item-same">
-              <span>Задача:</span>
-              <h3>{{ item.task }}</h3>
-            </div>
-            <div class="cases__item--tool cases__item-same">
-              <span>Инструмент:</span>
-              <h3>{{ item.tool }}</h3>
-            </div>
-            <div class="cases__item--platform cases__item-same">
-              <span>Платформа:</span>
-              <h3>{{ item.platform }}</h3>
-            </div>
-            <div class="cases__item--budget cases__item-same">
-              <span>Рекламный бюджет:</span>
-              <p>{{ item.budget }}</p>
-            </div>
-            <div class="cases__item--result cases__item-same">
-              <span>Результат:</span>
-              <p>{{ item.result }}</p>
+            <div class="cases__items--tools">
+              <div class="cases__item--task cases__item-same">
+                <span>Задача:</span>
+                <h3>{{ item.task }}</h3>
+              </div>
+              <div class="cases__item--tool cases__item-same">
+                <span>Инструмент:</span>
+                <h3>{{ item.tool }}</h3>
+              </div>
+              <div class="cases__item--platform cases__item-same">
+                <span>Платформа:</span>
+                <h3>{{ item.platform }}</h3>
+              </div>
+              <div class="cases__item--budget cases__item-same">
+                <span>Рекламный бюджет:</span>
+                <p>{{ item.budget }}</p>
+              </div>
+              <div class="cases__item--result cases__item-same">
+                <span>Результат:</span>
+                <p>{{ item.result }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -185,16 +187,18 @@
     background-color: #2f6464;
     display: flex;
     margin: 0 -10px;
-    padding: 25px 10px 10px 45px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   .cases__item--item {
     margin: 0 10px;
   }
-
+  .cases__items--tools {
+    padding: 0 10px 10px 45px;
+  }
   .cases__item--header {
     margin: 0 auto;
     text-align: center;
+    padding-top: 30px;
   }
   .cases__item--header-text {
     font-size: 28px;

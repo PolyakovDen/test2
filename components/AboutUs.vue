@@ -13,7 +13,7 @@
                 <div class="about-us__slider--wrapper">
                   <VueSlickCarousel v-bind="slickOptions">
                     <div v-for="(item, i) in items" :key="i" class="about-us__list" >
-                      <div class="about-us__item">
+                      <div class="about-us__item pa-2">
                         <p class="about-us__item--item">{{ item.description }}</p>
                       </div>
                     </div>
@@ -89,10 +89,19 @@
             description: 'Влияем на увеличение дохода'
           },
           {
-            description: 'LOREM LOREM LOREM LOREM'
+            description: 'Приводим клиентов для бизнеса'
           },
           {
-            description: 'LOREM на LOREM дохода'
+            description: 'Продвижение в интернете от А до Я'
+          },
+          {
+            description: 'Делаем сайты под ключ'
+          },
+          {
+            description: 'Выводим продажи на новый уровень'
+          },
+          {
+            description: 'Создаем контент, который влюбляет'
           },
         ]
       }
