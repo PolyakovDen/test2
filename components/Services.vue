@@ -7,13 +7,15 @@
     </div>
     <div class="services__list--wrapper">
       <v-container fluid class="pa-0">
-        <div class="services__list mr-2 ml-2 d-flex justify-center flex-wrap">
-          <ServicesCard
-            v-for="(item, index) in items"
-            :key="index"
-            :item="item"
-            class="services__item"
-          />
+        <div class="test">
+          <div class="services__list mr-2 ml-2">
+            <ServicesCard
+              v-for="(item, index) in items"
+              :key="index"
+              :item="item"
+              class="services__item"
+            />
+          </div>
         </div>
       </v-container>
     </div>
@@ -269,18 +271,27 @@ export default {
     max-width: 1000px !important;
   }
 
+  .test {
+    margin: 0 auto;
+    max-width: 700px;
+    display: flex;
+  }
+
   .services__list {
     margin-top: 55px;
     margin-bottom: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .services__list:first-child {
     margin-bottom: 0;
   }
 
-  .services__item {
-    margin-right: 65px;
-  }
+  /*.services__item {*/
+  /*  margin-right: 65px;*/
+  /*}*/
 
   @media (max-width:600px) {
     .services__item {
@@ -291,6 +302,9 @@ export default {
   @media (max-width:450px) {
     .services__item {
       margin-right: 20px;
+    }
+    .services__list {
+      justify-content: center;
     }
   }
 </style>
