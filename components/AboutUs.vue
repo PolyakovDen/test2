@@ -105,11 +105,13 @@
     width: 1500px;
   }
   .about-us__wrapper {
-    background-image: url("/aboutUs-bg.webp");
+    background-image: url("/aboutUs-bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    height: 770px;
+    width: 100%;
   }
   .about-us__slider--title {
     padding-top: 70px;
