@@ -110,7 +110,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 770px;
     width: 100%;
   }
   .about-us__slider--title {
