@@ -146,10 +146,12 @@
 <style scoped>
   .cases__block {
     background-image: url("/cases-bg.webp");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
   }
   .cases__block--wrapper {
     display: flex;

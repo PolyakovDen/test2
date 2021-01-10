@@ -112,8 +112,11 @@ export default {
   .form__block {
     background-image: url("/form-bg.webp");
     background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
   }
   .form__block--wrapper {
     display: flex;
