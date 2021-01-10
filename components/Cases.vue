@@ -242,11 +242,13 @@
   ::v-deep .slick-prev {
     left: 5px;
     background: url('/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+    z-index: 1;
   }
 
   ::v-deep .slick-next {
     right: 5px;
     background: url('/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+    z-index: 1;
   }
 
   @media (max-width:600px) {
