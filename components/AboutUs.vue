@@ -106,10 +106,16 @@
   }
   .about-us__wrapper {
     background-image: url("/aboutUs-bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    background-size: cover;
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*!*background-attachment: fixed;*!*/
+    /*background-size: cover;*/
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
   }
   .about-us__slider--title {
     padding-top: 70px;
