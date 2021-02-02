@@ -43,6 +43,12 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    ['nuxt-facebook-pixel-module', {
+      track: 'PageView',
+      pixelId: '833726884056078',
+      autoPageView: true,
+      disabled: false
+    }],
   ],
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)

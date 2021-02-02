@@ -284,14 +284,10 @@ export default {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
+  
   .services__list:first-child {
     margin-bottom: 0;
   }
-
-  /*.services__item {*/
-  /*  margin-right: 65px;*/
-  /*}*/
 
   @media (max-width:600px) {
     .services__item {
